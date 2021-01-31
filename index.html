@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- <script src="js/jquery.js" charset="utf-8"></script> -->
+    <script src="js/p5.min.js"></script>
+    <script src="js/dat.gui.js"></script>
+
+    <meta charset="utf-8">
+    <title> bubbles </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container large">
+      <div class="spacer">
+
+      </div>
+      <div class="row justify-content-md-center align-items-center">
+        <div class="col-3 align-self-center">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#firstModal">
+            <div class="card-body">
+              <h5 class="card-title">Scuba Diving</h5>
+              <p class="card-text">What is Scuba Diving</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#secondModal">
+            <div class="card-body clear">
+              <h5 class="card-title">Overview</h5>
+              <p class="card-text">SCUBA diving as a technical, social, and commercial activity</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 align-self-center">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#thirdModal">
+            <div class="card-body clear">
+              <h5 class="card-title">Pressure</h5>
+              <p class="card-text">Diving is all about Pressure</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row justify-content-md-center align-items-center mt-3">
+        <div class="col-3 align-self-center">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#fourthModal">
+            <div class="card-body">
+              <h5 class="card-title">Boyle's Law</h5>
+              <p class="card-text">For an ideal gas pressure and volume are inversely proportional at constant temperature</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#fithModal">
+            <div class="card-body clear">
+              <h5 class="card-title">Dalton's law</h5>
+              <p class="card-text">The total pressure of a gas is equal to the sum of the partial pressures of its components.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 align-self-center">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#sixthModal">
+            <div class="card-body clear">
+              <h5 class="card-title">Henry's</h5>
+              <p class="card-text">The concentration of a gas dissolved in a liquid is proportional to its partial pressure above the liquid.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row justify-content-md-center align-items-center mt-3">
+        <div class="col-3 align-self-center">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#seventhModal">
+            <div class="card-body">
+              <h5 class="card-title">Diving Experiences</h5>
+              <p class="card-text">Cave, Night, and Cage Diving</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#eighthModal">
+            <div class="card-body clear">
+              <h5 class="card-title">Diving Experiences</h5>
+              <p class="card-text">Deep, and Wreck Diving</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 align-self-center">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#ninethModal">
+            <div class="card-body clear">
+              <h5 class="card-title">My love of SCUBA Diving</h5>
+              <p class="card-text">Diving is the shortcut to Nirvana</p>
+              <img src="https://i.pinimg.com/564x/98/68/0b/98680b120d1c4e65e6c2cbf5094aada0.jpg" width="150px"alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">What is SCUBA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>What does SCUBA stand for?</h1>
+            <img src="https://media2.giphy.com/media/AheZDLIrOKu2Y/200.gif" alt="">
+            <img src="https://25.media.tumblr.com/8ad735440070d2b015a42d7d465ef964/tumblr_mlnvl2k5GO1s2yegdo1_400.gif" alt="">
+            <img src="https://media.tenor.com/images/1681e7d77b511869840faef17fd15d1c/tenor.gif" alt="">
+            <img src="https://cdn.lowgif.com/small/2b23f3f71413aa73-.gif" alt="">
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- secondModal -->
+    <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">What am I going to talk about?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class='table'>
+              <thead>
+                <tr>
+                  <th>Diving Theory</th>
+                  <th>Extreme Diving / Technical Diving</th>
+                  <th>Great things about diving</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pressure</td>
+                  <td>Cave Diving</td>
+                  <td>Red Sea</td>
+                </tr>
+                <tr>
+                  <td>Gas</td>
+                  <td>Night Diving</td>
+                  <td>Truk Lagoon</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Cage Diving</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Deep Diving</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Wreck Diving</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- thirdModal -->
+    <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SCUBA Diving and Pressure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Most of diving is about dealing with pressure.</p>
+            <p>Pressure is so important there are three different laws that pertain to diving.</p>
+            <ul>
+              <li>Boyle's Law</li>
+              <li>Henry's Law</li>
+              <li>Dalton's Law</li>
+            </ul>
+            <p>What is the <strong>most important law</strong> in SCUBA diving?</p>
+            <img src="https://djdo2py1q6zlg.cloudfront.net/magazine/wp-content/uploads/2017/08/divers_gif_3-compressed.gif" alt="">
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fourthModal -->
+    <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Boyle's Law</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>For an ideal gas pressure and volume are inversely proportional at constant temperature</p>
+            <p>What does that even mean? WTF. Any guess as to what that entails?</p>
+            <img src="https://lh6.googleusercontent.com/zqKWiVIOJpPCqFBFpmHvYXI-f0tbPbYv6GjfCl8wvaIxHKJr_ppNjCgYHngQH0jt5TDczilLTLq-ynA-6ON3XTIzDE0iqpk1V1NE8z5GSKPmW6ucBV_bS30a2BHhKqr0oBjtXLQpaec" alt="">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CbrMcH63XM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fithModal -->
+    <div class="modal fade" id="fithModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Dalton's Law</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>The total pressure of a gas is equal to the sum of the partial pressures of its components.</p>
+            <ul>
+              <li>+- 30m Nitrogen Narcosis / nitrox</li>
+              <li>+- 66m Oxygen Toxicity / trimix</li>
+              <li>> 100m deep water tremors</li>
+            </ul>
+            <img src="https://lh5.googleusercontent.com/FxvqJaVIGNugNW_kJ5eHMsIHoKNn6r9UviaWvzvjzwEMM-riSMHM9FjMoIlH9ICUzv0brjogd35IwnoHiAPAS6CwJ-DGS3GrGf9OQrXYqMtS93V4PbQOpiB0UsHl__6Ape59ykA34Q0" alt="">
+            <img src="https://lh5.googleusercontent.com/Ka7P_MZogXHO6D6KoNy-CAaG_F3HM2j1z4YzNYoR7FQzxfMmBBUwK-x3pIEYgHPEfBp3pghF-Gzru1vWEsSLnEuHMv0IysGmgwMgJO5KVcTQAj26QuAWxir_fBH-6UQEy2UKNi8x3s4" alt="">
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sixthModal -->
+    <div class="modal fade" id="sixthModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Henry's Law</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>The concentration of a gas dissolved in a liquid is proportional to its partial pressure above the liquid.</p>
+            <ul>
+              <li>Diffusion </li>
+              <li>Bends</li>
+            </ul>
+            <img src="https://lh4.googleusercontent.com/xn7I5y4a5ZB5PTLK-D2t8f_mrVq-93jwqacIQY5Jghr0wuJB9lY1D-0GXmU-0tJNHN7ojHC_pO0vPI6q5fkRZ8F1gmd--joooQD9lYyMeVd5HXHjS7c_5GRpNefa_A3jWpNsTkkQHTs" alt="">
+
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- seventhModal -->
+    <div class="modal fade" id="seventhModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Diving Experiences</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Cave Diving</th>
+                  <th>Night Diving</th>
+                  <th>Cage Diving</th>
+                </tr>
+                  <td><img src="https://i.makeagif.com/media/6-10-2016/GnNfvR.gif"></td>
+                  <td><img src="https://i.makeagif.com/media/5-03-2018/5RcG0X.gif"></td>
+                  <td><img width="400px" src="https://i.chzbgr.com/full/8285154048/hB1D8B795/hey-its-shark-week"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- eighthModal -->
+    <div class="modal fade" id="eighthModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Diving Experiences</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Deep Diving</th>
+                  <th>Wreck Diving</th>
+                </tr>
+                <tr>
+                  <td><img src="https://media2.giphy.com/media/w6YFQ3YU5VdMmITXon/giphy.gif"></td>
+                  <td><img src="https://c8.alamy.com/comp/GHPWPN/shipwreck-ss-thistlegorm-scuba-diver-inside-ship-wreck-by-the-motorcycle-GHPWPN.jpg" width="400px"></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ninethModal -->
+    <div class="modal fade" id="ninethModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">My favorite parts of SCUBA diving</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://previews.dropbox.com/p/thumb/ABBYx2Vn1hae07bTZg8F02dufqmvL86rD4uRBd0NUboG_7Nqv5MCoYIeL1D4oLPUNLVeVZ7e8HnVPcm9cx_VchmyKs9rClmt5svGNW8KUYp0W0RiWX8oNE69X8UksMUegqhsISaGr0gLAk7f7IP_wtLOMDWcjb-J-hwjTE8uvHETFUpta2MnT3jXCUyGJJXDBAKdHoh0sNpu6_cyIIApvhgAlKOI8v67pxBruhvbusMWm6AjeH4ZSu2SOTceDyizxvY84YDoV_SSPCv0xWeFrO7PVZ2Y9oe_fkVRw3zzqhWIUE31UPKuqlJVb0N-9M-fpk8BvYYQEnlPAMyOwuCsEgB7vVZfvlCfF3eJMlV8Gk2evQ/p.jpeg?fv_content=true&size_mode=5" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Red Sea live Aboard</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://previews.dropbox.com/p/thumb/ABAS3OH-INsR0sw35Rp5VyKy5XYoQz6_5eo6EmBps3ENbQb_tkSzVGYqW1eehyrR9MVBzcKsPr3TMFxggEw4dF3t56a30dV3LMqNMdyG0uaalDXlW6M5W3koINYAuvE0vdqD1hADLL9AY0mTsY3b1o_Dbzsr-wfGZUCc1s5ItiAKmP42E6A1SNZToXhpHvIt2PhlALz7Llktxv6SocpM-djbO2hey6WoswYVvi_0XcctcdfBWdGNdIyMUmGYWczJFt-yIvb0MhCpPnXbLYcUQEuTyRPY6EiDLRjJSCpD71UdrbYXy5SnjLyFH5h1o9bD0rvlkBTyH5p-Do-gRoZajlA0zwehOTmqGhAcfPku7bR8zvxxzQ7dTNw_Uy1QQQoi37NwiI0_Sw0zph0tgUNQSBgoJ1uKBI32C7rUz_GZGM0ybg/p.jpeg?fv_content=true&size_mode=5" class="d-block w-100" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Sodwana</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://previews.dropbox.com/p/thumb/ABCts-ZsBlhCIGLZz2GjMXlz_znhUVhoGHMsrm54JdY8ftnzQ2V5nTGakXzr7DQXiKjcXHhomf32spgxK2MWUbUw1iJJjF0SYYdofIrAODqnUHn1dLAajuhT4QltbaYIF8KzBBH7jyl4avMV3jtk5OH5CKumEXaZfFCmkbpxBi2o8Jo2VRDVLBchYiNnlZg9WsjdYneKT5LdBpOcjgrTnR9gJbxOseTUmx-rA6vU7d0zVbPiKMmKqh4Hamvt59673cOLPo88HPSzsqO71N0zYhuOGi14NFa6k7ZwCNZGX_DCwo0Eu8IaaWmTTwTp4ESzyD9H7ivP9J0UuwBv56-IEcDqZ6vEexaEElNnbvfJOXSVbw/p.jpeg?fv_content=true&size_mode=5" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Sodwana Ragged tooth</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://fareastfling.files.wordpress.com/2016/10/san-francisco-maru.jpg?w=576" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>San Francisco Maru</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/44827994_1911473715826106_5993870734106034176_o.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_ohc=xzSBmFMbSqEAX96xU0k&_nc_ht=scontent-syd2-1.xx&oh=3e7a5f6b6a2c8e4becde99494f2e389f&oe=602F2933" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>San Francisco Maru</h5>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+
+
+
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
